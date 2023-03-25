@@ -41,6 +41,6 @@
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0",
-    "com.nk.statemachine": "https://Dev_Kimu@bitbucket.org/SS_Kimu/package_01.git"
+    "com.nk.statemachine": "1.0.0"
   }
 }
