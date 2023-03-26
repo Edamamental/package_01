@@ -4,3 +4,5 @@ Library
 Logs
 package_01.sln
 UserSettings
+obj/Debug
+Temp
