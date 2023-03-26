@@ -1,12 +1,8 @@
 {
-  "name": "com.nk.statemachine",
-  "displayName": "nk.statemachine",
-  "version": "1.0.0",
-  "unity": "2017.1",
-  "description": "This is my hogehoge Package.",
-  "keywords": [
-    "Script",
-    "Test"
-  ],
-  "category": "Controllers"
+    "name": "com.nk.statemachine",
+    "version": "0.1.0",
+    "displayName": "Statemachine",
+    "description": "This is an my statemachine system package",
+    "unity": "2021.3",
+    "unityRelease": "0b5"
 }
