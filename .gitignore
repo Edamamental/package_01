@@ -1,0 +1,6 @@
+*.csproj
+settings.json
+Library
+Logs
+package_01.sln
+UserSettings
