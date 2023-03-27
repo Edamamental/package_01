@@ -1,0 +1,8 @@
+{
+    "name": "com.nk.utility",
+    "version": "0.1.0",
+    "displayName": "UtilityScripts",
+    "description": "This is an my utility scripts package",
+    "unity": "2021.3",
+    "unityRelease": "0b5"
+}

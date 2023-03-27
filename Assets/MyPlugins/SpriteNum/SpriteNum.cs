@@ -71,6 +71,7 @@ namespace localSystem
 		{
             if(hAlign == align.center)
             {
+				/*
                 if (numData.Degit.IsEven())
                 {
                     //センターになるデジットを算出してそこからの＋マイナスオフセットを掛ける偶数の場合はそこから半分ずらす
@@ -85,6 +86,9 @@ namespace localSystem
                     int v = degit - centerDegit;
                     return trans.sizeDelta.x * -Vector3.right * (v) - Vector3.right * trachking * v;
                 }
+				*/
+				//パッケージ移行につき一時的にOFF
+				return Vector2.zero;
             }
             else if(hAlign == align.left)
             {
