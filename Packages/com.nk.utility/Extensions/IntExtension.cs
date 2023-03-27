@@ -1,8 +1,11 @@
 ﻿
-public static class IntExtension
+namespace CP.useful
 {
-    public static bool IsEven(this int self)
+    public static class IntExtension
     {
-        return self % 2 == 0;
+        public static bool IsEven(this int self)
+        {
+            return self % 2 == 0;
+        }
     }
 }

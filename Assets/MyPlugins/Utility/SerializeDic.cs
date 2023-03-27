@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace localSystem
+namespace CP.useful
 {
 	[System.Serializable]
 	public class SerializDic<T, T1, T2> where T : SKeyValuePair<T1, T2>
