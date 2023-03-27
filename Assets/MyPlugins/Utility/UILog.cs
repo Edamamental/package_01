@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UILog : useful.SingletonMonoBehaviour<UILog>
+public class UILog : CP.useful.SingletonMonoBehaviour<UILog>
 {
 	[SerializeField]Text atext = null;
     List<string> logStr = new List<string>();

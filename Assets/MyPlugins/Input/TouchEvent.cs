@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using LocalEventSystem;
-using MyTouchInput;
+using CP.MyTouchInput;
 
-namespace MyTouchInput
+namespace CP.MyTouchInput
 {
 	public static class TouchEvent
 	{

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
-using useful;
+using CP.useful;
 
 public class BgmManager : SingletonMonoBehaviour<BgmManager>
 {

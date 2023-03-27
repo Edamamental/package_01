@@ -1,8 +1,8 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace useful
+namespace CP.useful
 {
 	public class SingletonMonoBehaviour<T> : MonoBehaviour
 	{

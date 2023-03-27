@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MenuManager : useful.SingletonMonoBehaviour<MenuManager>
+public class MenuManager : CP.useful.SingletonMonoBehaviour<MenuManager>
 {
 	[SerializeField]MenuCreateSettings menuCreateSetting = null;
 

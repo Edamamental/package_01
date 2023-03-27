@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using useful;
+using CP.useful;
+using CP.MyTouchInput;
 
 
-namespace MyTouchInput
+namespace CP.MyTouchInput
 {
-    public class TouchInputManager : useful.SingletonMonoBehaviour<TouchInputManager>
+    public class TouchInputManager : CP.useful.SingletonMonoBehaviour<TouchInputManager>
     {
         TouchInfo touchInfo = new TouchInfo();
         [SerializeField, Range(0.1f, 2)]
@@ -106,8 +107,8 @@ namespace MyTouchInput
 
 public interface ITouchInput
 {
-    void TouchUp(MyTouchInput.TouchInfo info);
-    void TouchDown(MyTouchInput.TouchInfo info);
-    void Touching(MyTouchInput.TouchInfo info);
+    void TouchUp(CP.MyTouchInput.TouchInfo info);
+    void TouchDown(CP.MyTouchInput.TouchInfo info);
+    void Touching(CP.MyTouchInput.TouchInfo info);
 }
 

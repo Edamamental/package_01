@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using useful;
+using CP.useful;
 
-namespace useful
+namespace CP.useful
 {
 	public class EffectManager : SingletonMonoBehaviour<EffectManager>
 	{
