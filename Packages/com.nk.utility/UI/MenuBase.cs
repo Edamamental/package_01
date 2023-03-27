@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using CP.MyTouchInput;
+//using CP.MyTouchInput;
 
 public class MenuBase : UIBase
 {
@@ -16,7 +16,7 @@ public class MenuBase : UIBase
 	{
         //LocalEvent.DecideButtonEvent -= Decide;
         //localButtonEvent.ButtonEvent -= ButtomDown;
-		TouchEvent.ButtonDownEvent -= ButtomDown;
+		//TouchEvent.ButtonDownEvent -= ButtomDown;
 
 	}
 
@@ -24,7 +24,7 @@ public class MenuBase : UIBase
 	{
         //LocalEvent.DecideButtonEvent += Decide;
         //localButtonEvent.ButtonEvent += ButtomDown;
-		TouchEvent.ButtonDownEvent -= ButtomDown;
+		//TouchEvent.ButtonDownEvent -= ButtomDown;
 	}
 
 	protected virtual void Update(){}
