@@ -6,6 +6,8 @@ using UnityEngine;
 public class MenuBase : UIBase
 {
 	[SerializeField]float closeTrandisionTime = 0.0f;
+	public delegate void ButtonDownEvent(string key);
+	public ButtonDownEvent ReseiveButtonDown;
 	Coroutine col = null;
 	private void Awake()
 	{
@@ -75,6 +77,10 @@ public class MenuBase : UIBase
 		if(!gameObject.activeSelf)
 		{
 			return;
+		}
+		if(ReseiveButtonDown != null)
+		{
+			ReseiveButtonDown.Invoke(key);
 		}
 	}
 }
