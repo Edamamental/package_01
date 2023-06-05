@@ -252,7 +252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDontDestory: 0
-  HasParentSingleton: 0
+  IsDonotDestoryChild: 0
 --- !u!1 &397587166
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,7 +298,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDontDestory: 0
-  HasParentSingleton: 1
+  IsDonotDestoryChild: 1
 --- !u!1 &503832176
 GameObject:
   m_ObjectHideFlags: 0
@@ -471,7 +471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDontDestory: 1
-  HasParentSingleton: 0
+  IsDonotDestoryChild: 0
 --- !u!1 &2011254676
 GameObject:
   m_ObjectHideFlags: 0
@@ -518,4 +518,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDontDestory: 0
-  HasParentSingleton: 0
+  IsDonotDestoryChild: 0
