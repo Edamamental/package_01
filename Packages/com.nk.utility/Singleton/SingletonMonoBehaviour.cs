@@ -10,41 +10,38 @@ namespace CP.useful
 
 		static T m_Singlton;
 		public static T Instance { get { return m_Singlton; } }
-
-		int debugCount = 0;
+		[SerializeField]bool IsDonotDestoryChild = false;
 
 		protected virtual void Awake()
 		{
-
-
-			if (IsDontDestory && m_Singlton == null)
-				DontDestroyOnLoad(this.gameObject);
-
-			MakeSingleton();
-		}
-
-		public virtual void OnDestroy()
-		{
-			if (!IsDontDestory)
-				m_Singlton = default(T);
-		}
-
-		public virtual void MakeSingleton()
-		{
-			debugCount++;
-
-			if (m_Singlton == null)
+			if(m_Singlton == null)
 			{
-				m_Singlton = this.GetComponent<T>();
-			}
-			else if (IsDontDestory)
-			{
-				Destroy(this.gameObject);
+				if(IsDontDestory)
+				{
+					DontDestroyOnLoad(this.gameObject);
+				}
+				MakeSingleton();
 			}
 			else
 			{
 				Destroy(this.gameObject);
 			}
+		}
+
+		public virtual void OnDestroy()
+		{
+			if (!IsDontDestory)
+			{
+				if(!IsDonotDestoryChild)
+				{
+					m_Singlton = default(T);
+				}
+			}
+		}
+
+		public virtual void MakeSingleton()
+		{
+			m_Singlton = this.GetComponent<T>();
 		}
 	}
 
